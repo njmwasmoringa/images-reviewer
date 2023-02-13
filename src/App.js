@@ -4,13 +4,14 @@
 import Images from './components/image-list/Images';
 import { LoaderProvider } from './context/loader.provider';
 import { ImagesProvider } from './context/images.provider';
+import { Search } from './components/search/search';
 
 function App() {
   return (
     <LoaderProvider>
       <ImagesProvider>
+         <Search />
         <Images />
-         <Search/>
         </ImagesProvider>
     </LoaderProvider>
     /* <div className="App">
