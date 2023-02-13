@@ -43,7 +43,8 @@ export default function Pagination() {
     return <ul>{ totalPages / 10 }
         <li>{currentPage > 1 ? pageButton(1, '<<') : ''}</li>
         <li>{currentPage > 1 ? pageButton(currentPage - 10, '<') : ''}</li>
-        {pages.map(page => <li key={page}>{pageButton(page, page)}</li> )}
+        <li className="sm">{ currentPage }</li>
+        {pages.map(page => <li className="lg" key={page}>{pageButton(page, page)}</li> )}
         <li>{currentPage < totalPages ? pageButton(currentPage + 10, '>') : ''}</li>
         <li>{currentPage < totalPages ? pageButton(totalPages, '>>') : ''}</li>
     </ul>
