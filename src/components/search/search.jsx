@@ -1,6 +1,6 @@
 import { useState, useContext } from "react";
 import { ImagesContext } from "../../context/images.provider";
-import ImagesAPI from "../../services/images.service";
+
 import "./search.css";
 
 export const Search = () => {
