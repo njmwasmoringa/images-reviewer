@@ -4,3 +4,17 @@ ul{
     justify-content: center;
     gap: 0.5rem;
 }
+
+.sm{
+    display: none;
+}
+
+@media(max-width:780px){
+    .lg{
+        display: none;
+    }
+
+    .sm{
+        display: block;
+    }
+}
