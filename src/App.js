@@ -1,5 +1,6 @@
-import logo from './logo.svg';
-import './App.css';
+
+    
+
 import Images from './components/image-list/Images';
 import { LoaderProvider } from './context/loader.provider';
 import { ImagesProvider } from './context/images.provider';
@@ -9,6 +10,7 @@ function App() {
     <LoaderProvider>
       <ImagesProvider>
         <Images />
+         <Search/>
         </ImagesProvider>
     </LoaderProvider>
     /* <div className="App">
@@ -27,6 +29,7 @@ function App() {
         </a>
       </header>
     </div> */
+
   );
 }
 
